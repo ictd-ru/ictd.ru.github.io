@@ -1,4 +1,4 @@
-baseURL = "new.ictd.ru"
+baseURL = "https://new.ictd.ru"
 languageCode = "en-us"
 title = "Hugo Serif Theme"
 #baseURL = "/"
