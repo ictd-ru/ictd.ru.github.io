@@ -1,5 +1,5 @@
 baseURL = "https://ictd.ru"
-languageCode = "en-us"
+languageCode = "ru-ru"
 title = "Hugo Serif Theme"
 #baseURL = "/"
 themesDir = "themes"
