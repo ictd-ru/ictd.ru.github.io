@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
+    "title": "Бесплатная консультация",
+    "description": "Новые клиенты получают бесплатную консультацию.",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Сертифицированные сотрудники",
+    "description": "Наши сотрудники проходят обучение по тем-же программам, что и заказчики.",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Гарантия возрата оплаты",
+    "description": "Мы вернем оплату, в случае отклонения Вашей заявки по нашей вине.",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]
