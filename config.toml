@@ -1,6 +1,6 @@
 baseURL = "https://ictd.ru"
 languageCode = "en-us"
-title = "Hugo Serif Theme"
+title = "Межрегиональный центр тендерной документации"
 #baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
@@ -20,7 +20,7 @@ theme = "hugo-serif-theme"
     show_services_button = true  # show / hide the "view all services" button
 
   [params.logo]
- #   mobile = "images/logo/logo-mobile.svg"
+ #   mobile = "images/logo/logo.svg"
 mobile_height = "36px"
  #   desktop = "images/logo/logo.svg"
 desktop_height = "36px"
@@ -58,8 +58,8 @@ desktop_height = "36px"
       weight = 1
 
   [[menu.main]]
-      name = "Team"
-      url = "/team/"
+      name = "Отзывы"
+      url = "/testimonials/"
       weight = 2
 
   [[menu.main]]
@@ -74,12 +74,12 @@ desktop_height = "36px"
 
   # Footer Menu
   [[menu.footer]]
-    name = "Home"
+    name = "Домой"
     url = "/"
       weight = 1
 
   [[menu.footer]]
-    name = "Contact"
+    name = "Контакты"
     url = "/contact/"
       weight = 2
 
