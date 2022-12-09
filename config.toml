@@ -69,7 +69,6 @@ desktop_height = "36px"
       weight = 3
 
 
-
   [[menu.main]]
       name = "Контакты"
       url = "/contact/"
@@ -78,7 +77,12 @@ desktop_height = "36px"
   [[menu.main]]
       name = "ЧаВо"
       url = "/faq/"
-      weight = 5      
+      weight = 5    
+
+  [[menu.main]]
+      name = "Стоимость"
+      url = "/pricing/"
+      weight = 6  
 
   # Footer Menu
   [[menu.footer]]
