@@ -75,6 +75,11 @@ desktop_height = "36px"
       url = "/contact/"
       weight = 4
 
+  [[menu.main]]
+      name = "ЧаВо"
+      url = "/faq/"
+      weight = 5      
+
   # Footer Menu
   [[menu.footer]]
     name = "Домой"
