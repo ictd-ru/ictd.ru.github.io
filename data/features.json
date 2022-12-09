@@ -1,5 +1,20 @@
 [
   {
+    "title": "Тендерное сопровождение",
+    "description": "под 'ключ'.",
+    "image": "images/features/noun_branding_1885335.svg"
+  },
+  {
+    "title": "Закрытые торги (АСТ-ГОЗ)",
+    "description": "Регистрация и настройка системы. Участие в торгах.",
+    "image": "images/features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Независимые гарантии",
+    "description": "поможем с оформлением.",
+    "image": "images/features/noun_3d modeling_1885342.svg"
+  },
+  {
     "title": "Бесплатная консультация",
     "description": "для новых клиентов.",
     "image": "images/features/noun_branding_1885335.svg"
