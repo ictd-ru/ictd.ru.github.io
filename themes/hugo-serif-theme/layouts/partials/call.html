@@ -1,7 +1,7 @@
 <div class="call">
   <div class="call-box-top">
     {{ if .site.Data.contact.phone }}
-        <div class="call-phone"><strong>Phone: </strong> {{ .site.Data.contact.phone }} </div>
+        <div class="call-phone"><strong>Телефон: </strong> {{ .site.Data.contact.phone }} (Telegram, WhatsApp, Signal, Element)</div>
     {{ end }}
     {{ if .site.Data.contact.email }}
     <div class="call-email"><strong>Email: </strong>
@@ -13,7 +13,7 @@
   </div>
     {{ if eq .show_button "true" }}
       <div class="call-box-bottom">
-        <a href="{{ .site.Data.contact.contact_button_link | relURL }}" class="button">Contact</a>
+        <a href="{{ .site.Data.contact.contact_button_link | relURL }}" class="button">Контакты</a>
       </div>
     {{ end }}
 </div>

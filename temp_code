@@ -1,0 +1,4 @@
+  [[menu.main]]
+      name = "О компании"
+      url = "/about/"
+      weight = 3

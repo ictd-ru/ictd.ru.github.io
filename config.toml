@@ -53,19 +53,22 @@ desktop_height = "36px"
 [menu]
   # Main Menu
   [[menu.main]]
+    name = "Домой"
+    url = "/"
+      weight = 1
+
+  # Main Menu
+  [[menu.main]]
     name = "Услуги"
     url = "/services/"
-      weight = 1
+      weight = 2
 
   [[menu.main]]
       name = "Отзывы"
       url = "/testimonials/"
-      weight = 2
-
-  [[menu.main]]
-      name = "О компании"
-      url = "/about/"
       weight = 3
+
+
 
   [[menu.main]]
       name = "Контакты"
