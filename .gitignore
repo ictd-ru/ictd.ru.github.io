@@ -1,3 +1,5 @@
 .hugo_build.lock
 *.DS_Store
 /public/*
+resources/_gen/assets/scss/scss/style.scss_2bbe13cc47075fab4343233ad3e58bb8.content
+resources/_gen/assets/scss/scss/style.scss_2bbe13cc47075fab4343233ad3e58bb8.json
