@@ -1,6 +1,6 @@
 baseURL = "https://ictd.ru"
 languageCode = "en-us"
-title = "Межрегиональный центр тендерной документации"
+title = "Межрегиональный центр тендерной документации. Услуги оказывает самозанятный Кошлаков Евгений Владимирович."
 #baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
@@ -48,7 +48,7 @@ desktop_height = "36px"
     summary_large_truncate = 1  # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = ' <h5 align="right">"Межрегиональный центр тендерной документации"</h5>'
+    copyright_text = ' <h5 align="right">"Межрегиональный центр тендерной документации. Услуги оказывает самозанятный Кошлаков Евгений Владимирович."</h5>'
 
 [menu]
   # Main Menu
