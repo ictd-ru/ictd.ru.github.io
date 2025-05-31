@@ -48,7 +48,7 @@ desktop_height = "36px"
     summary_large_truncate = 1  # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = ' <h5 align="right">"Межрегиональный центр тендерной документации", общество с ограниченной ответственностью, <br> г. Ярославль ИНН 7604327160, КПП 760401001, ОГРН 1177627019228; </h5>'
+    copyright_text = ' <h5 align="right">"Межрегиональный центр тендерной документации"</h5>'
 
 [menu]
   # Main Menu
