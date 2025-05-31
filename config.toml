@@ -71,11 +71,6 @@ desktop_height = "36px"
       weight = 4
 
   [[menu.main]]
-      name = "ЧаВо"
-      url = "/faq/"
-      weight = 5    
-
-  [[menu.main]]
       name = "Стоимость"
       url = "/pricing/"
       weight = 6  
