@@ -33,6 +33,13 @@ jobs:
       - name: Build with Hugo
         run: hugo --minify
 
+      - name: Verify Build Directory
+        run: |
+          if [ ! -d "./public" ]; then
+            echo "Public folder does not exist. Build process might have failed.";
+            exit 1;
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
