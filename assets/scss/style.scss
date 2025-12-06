@@ -1,0 +1,263 @@
+// Colors
+$primary: {{ .Site.Params.colors.primary | default "#f24088" }};
+$black: {{ .Site.Params.colors.black | default "#2f2f41" }};
+$white: {{ .Site.Params.colors.white | default "#ffffff" }};
+$white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
+$grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
+
+// Fonts
+$font-family-base: {{ .Site.Params.fonts.base }}, Helvetica, Arial, sans-serif, -apple-system;
+$font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Footer
+$footer-background-color: $primary;
+$footer-text-color: $white;
+$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-text-color: $white;
+
+// Bootstrap
+@import 'bootstrap-variables';
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap-grid';
+// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+
+
+// Libraries
+@import 'libraries/hamburgers/hamburgers';
+
+// Components
+@import 'components/type';
+@import 'components/page';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/sub-footer';
+@import 'components/logo';
+@import 'components/main-menu';
+@import 'components/main-menu-mobile';
+@import 'components/hamburger';
+@import 'components/buttons';
+@import 'components/call';
+@import 'components/title';
+@import 'components/content';
+@import 'components/intro';
+@import 'components/intro-image';
+@import 'components/strip';
+@import 'components/feature';
+@import 'components/social';
+
+// Pages
+@import 'pages/home';
+@import 'pages/team/team-summary';
+@import 'pages/services/page-services-single';
+
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font-family-base;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+// ==============================
+// КАСТОМНЫЕ СТИЛИ ДЛЯ УЛУЧШЕНИЯ ДИЗАЙНА
+// ==============================
+
+// Обновленные переменные цветов для современного вида
+body {
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2d3748;
+}
+
+// Улучшенная типографика
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  @include media-breakpoint-up(md) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+  }
+}
+
+strong {
+  font-weight: 600;
+  color: $primary;
+}
+
+// Улучшенные таблицы
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: $white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  thead {
+    background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+    color: $white;
+
+    th {
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #e2e8f0;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #f7fafc;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+}
+
+.intro {
+  padding: 4rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 6rem 0;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $grey;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+}
+
+.content {
+  h3 {
+    color: $primary;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid $primary;
+
+    &:first-child {
+      margin-top: 2rem;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, $primary 0%, transparent 100%);
+    margin: 3rem 0;
+  }
+}
+
+.feature {
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border-radius: 0.75rem;
+  background: $white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba($primary, 0.1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: rgba($primary, 0.3);
+  }
+
+  h2 {
+    color: $primary;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: $grey;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+}
+
+.strip {
+  padding: 4rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 6rem 0;
+  }
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+// ==============================
+// НОВЫЙ ДИЗАЙН - MODERN CORPORATE
+// ==============================
+@import 'custom';

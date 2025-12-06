@@ -1,32 +1,32 @@
 [
   {
-    "title": "Тендерное сопровождение",
-    "description": "под 'ключ'.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Комплексное сопровождение",
+    "description": "Полный цикл работы с тендером — от регистрации на площадке до заключения контракта. Вы получаете результат, мы берем на себя все технические детали.",
+    "image": "images/features/comprehensive-support.svg"
   },
   {
-    "title": "Закрытые торги (АСТ-ГОЗ)",
-    "description": "Регистрация и настройка системы. Участие в торгах.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Опыт в закрытых торгах",
+    "description": "Специализируемся на АСТ-ГОЗ: настраиваем систему, проходим аккредитацию, участвуем в закрытых торгах государственного оборонного заказа.",
+    "image": "images/features/closed-tenders.svg"
   },
   {
-    "title": "Независимые гарантии",
-    "description": "поможем с оформлением.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Помощь с гарантиями",
+    "description": "Консультируем по независимым банковским гарантиям и помогаем с оформлением документов для обеспечения заявок.",
+    "image": "images/features/guarantee.svg"
   },
   {
     "title": "Бесплатная консультация",
-    "description": "для новых клиентов.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "description": "Первая консультация для новых клиентов бесплатно. Разберем вашу ситуацию и предложим оптимальное решение.",
+    "image": "images/features/consultation.svg"
   },
   {
-    "title": "Сертифицированные сотрудники",
-    "description": "обучение сотрудников по программам для заказчиков.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Профессиональная экспертиза",
+    "description": "Наши специалисты регулярно повышают квалификацию и следят за изменениями законодательства в сфере госзакупок.",
+    "image": "images/features/expertise.svg"
   },
   {
-    "title": "Гарантия возрата оплаты",
-    "description": "в случае отклонения Вашей заявки по нашей вине.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Гарантия возврата средств",
+    "description": "Если ваша заявка отклонена по нашей вине — вернем 100% оплаты. Мы уверены в качестве своей работы.",
+    "image": "images/features/money-back.svg"
   }
 ]

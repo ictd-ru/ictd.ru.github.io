@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(hugo server:*)",
+      "Bash(hugo:*)",
+      "Bash(timeout 3 hugo server:*)",
+      "Skill(frontend-design:frontend-design)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,261 @@
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-pattern"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Работаем по всей России
+    </div>
+
+    <h1 class="hero-title">
+      <span class="title-line">Ваш надёжный партнёр</span>
+      <span class="title-line title-accent">в мире госзакупок</span>
+    </h1>
+
+    <p class="hero-description">
+      Профессиональное тендерное сопровождение для бизнеса любого масштаба.
+      Берём на себя всю техническую работу — от регистрации на площадках до заключения контрактов.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number" data-count="44">44</span>
+        <span class="stat-label">ФЗ</span>
+        <span class="stat-desc">Госзакупки</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number" data-count="223">223</span>
+        <span class="stat-label">ФЗ</span>
+        <span class="stat-desc">Коммерческие</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label"></span>
+        <span class="stat-desc">Гарантия возврата</span>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="{{ "contact/" | relURL }}" class="btn btn-primary">
+        <span>Бесплатная консультация</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="{{ "pricing/" | relURL }}" class="btn btn-secondary">
+        Узнать стоимость
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <span>Официальное оформление</span>
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <span>Удалённая работа</span>
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <span>Чеки и документы</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+{{if .Site.Data.features}}
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Наши преимущества</span>
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="section-subtitle">Комплексный подход к тендерному сопровождению с гарантией результата</p>
+    </div>
+
+    <div class="features-grid">
+      {{ range $index, $feature := .Site.Data.features }}
+      <div class="feature-card" style="--delay: {{ $index }}">
+        <div class="feature-icon">
+          {{ if .image }}
+          <img src="{{ .image | relURL }}" alt="{{ .title }}" width="48" height="48" />
+          {{ else }}
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          {{ end }}
+        </div>
+        <h3 class="feature-title">{{ .title }}</h3>
+        <p class="feature-description">{{ .description }}</p>
+        <div class="feature-glow"></div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{end}}
+
+<!-- Process Section -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Как мы работаем</span>
+      <h2 class="section-title">Простой путь к победе в тендере</h2>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-line"></div>
+
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Консультация</h3>
+          <p>Бесплатно разберём вашу ситуацию и предложим оптимальное решение</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Подготовка</h3>
+          <p>Настроим рабочее место, оформим аккредитацию на площадках</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Участие</h3>
+          <p>Подготовим заявку, подадим документы, проведём торги</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Победа</h3>
+          <p>Поможем заключить контракт и начать работу с заказчиком</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-content">
+        <h2>Готовы начать?</h2>
+        <p>Первая консультация бесплатно. Обсудим ваш тендер и предложим оптимальное решение.</p>
+
+        <div class="cta-contact">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Телефон</span>
+              <a href="tel:{{ .Site.Data.contact.phone }}">{{ .Site.Data.contact.phone }}</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Email</span>
+              <a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-messengers">
+          <span>Мессенджеры:</span>
+          <a href="tg://resolve?domain=ictd_bot" class="messenger-link" title="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/79641361484" class="messenger-link" title="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-visual">
+        <div class="cta-badge">
+          <div class="badge-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <span>Гарантия<br>возврата 100%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "footer_js" }}
+<script>
+// Smooth reveal animations on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.feature-card, .process-step, .section-header').forEach(el => {
+    observer.observe(el);
+  });
+});
+</script>
+{{ end }}
