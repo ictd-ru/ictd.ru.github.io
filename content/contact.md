@@ -3,6 +3,7 @@ title: 'Контакты'
 meta_title: 'Контакты | Тендерное сопровождение по всей России'
 description: 'Свяжитесь с нами для консультации по тендерному сопровождению. Телефон, email, Telegram, WhatsApp. Работаем ежедневно. Первая консультация бесплатно.'
 date: 2018-02-22T17:01:34+07:00
+type: page
 layout: contact
 ---
 
@@ -16,7 +17,7 @@ layout: contact
 
 **Email:** [hi@ictd.ru](mailto:hi@ictd.ru)
 
-**Telegram:** [@ictd_bot](tg://resolve?domain=ictd_bot)
+**Telegram:** [@TendlyRU](tg://resolve?domain=TendlyRU)
 
 **WhatsApp:** [Написать в WhatsApp](https://wa.me/79641361484)
 

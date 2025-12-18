@@ -2,9 +2,6 @@
 title: 'Отзывы клиентов'
 meta_title: 'Отзывы о тендерном сопровождении'
 description: "Отзывы клиентов о нашей работе. Реальные истории успешного участия в государственных и коммерческих тендерах."
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: false
-intro_image_hide_on_mobile: true
 ---
 
 ## Что говорят наши клиенты
